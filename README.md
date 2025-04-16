@@ -14,3 +14,6 @@ A Stardew Valley mod, including new machines and mechanisms about potatoes.<br>
 - 无平衡性调整，如机器的产出、工作时间，矿物的生成规律等。
 - 没有测试与其他模组的兼容性。
 - 钛目前没有任何作用，会在后续添加
+## 联系我
+B站：莱里LeliGame
+小红书：莱里LeliGame
