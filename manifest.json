@@ -1,0 +1,18 @@
+{
+    "Name": "PotatoUniverseCP",
+    "Author": "Leli",
+    "Version": "0.1",
+    "Description": "Use Potato's power to travel through universe!", 
+    "UniqueID": "Leli.PotatoUniverseCP",
+    "MinimumApiVersion": "4.0.0",
+    "Dependencies": [
+        {
+          "UniqueID": "mistyspring.ItemExtensions",
+          "IsRequired": true
+        }
+      ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+    
+}

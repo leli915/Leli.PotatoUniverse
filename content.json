@@ -1,0 +1,1841 @@
+{
+  "Format": "2.5.0",
+  "Changes": [
+    //加入物品
+    //锌
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_ZincBar": {
+          "Name": "ZincBar",
+          "Displayname": "锌锭",
+          "Description": "一条纯锌锭。",
+          "Type": "Basic",
+          "Category": -15,
+          "Price": 60, //TODO:价格都要改
+          "Texture": "Mods\\Leli.PotatoUniverseCP\\ZincBar"
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_ZincOre": {
+          "Name": "ZincOre",
+          "Displayname": "锌矿石",
+          "Description": "一种和电力息息相关的矿石，能被熔炼成锌锭。",
+          "Type": "Basic",
+          "Category": -15,
+          "Price": 10,
+          "Texture": "Mods\\Leli.PotatoUniverseCP\\ZincOre"
+        }
+      }
+    },
+
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Mods/Leli.PotatoUniverseCP/ZincBar",
+      "FromFile": "assets/objects/ZincBar.png"
+    },
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Mods/Leli.PotatoUniverseCP/ZincOre",
+      "FromFile": "assets/objects/ZincOre.png"
+    },
+    //铝
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_AluminumBar": {
+          "Name": "AluminumBar",
+          "Displayname": "铝锭",
+          "Description": "一条纯铝锭...也许上面有层氧化膜。",
+          "Type": "Basic",
+          "Category": -15,
+          "Price": 180,
+          "Texture": "Mods\\Leli.PotatoUniverseCP\\AluminumBar"
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_AluminumOre": {
+          "Name": "AluminumOre",
+          "Displayname": "铝矿石",
+          "Description": "一种难以熔炼的矿石，能被电解成铝锭。",
+          "Type": "Basic",
+          "Category": -15,
+          "Price": 20,
+          "Texture": "Mods\\Leli.PotatoUniverseCP\\AluminumOre"
+        }
+      }
+    },
+
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Mods/Leli.PotatoUniverseCP/AluminumBar",
+      "FromFile": "assets/objects/AluminumBar.png"
+    },
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Mods/Leli.PotatoUniverseCP/AluminumOre",
+      "FromFile": "assets/objects/AluminumOre.png"
+    },
+    //钛
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_TitaniumBar": {
+          "Name": "TitaniumBar",
+          "Displayname": "钛锭",
+          "Description": "一条纯钛锭。",
+          "Type": "Basic",
+          "Category": -15,
+          "Price": 300,
+          "Texture": "Mods\\Leli.PotatoUniverseCP\\TitaniumBar"
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_TitaniumOre": {
+          "Name": "TitaniumOre",
+          "Displayname": "钛矿石",
+          "Description": "又叫金红石，能被电解成钛锭。",
+          "Type": "Basic",
+          "Category": -15,
+          "Price": 30,
+          "Texture": "Mods\\Leli.PotatoUniverseCP\\TitaniumOre"
+        }
+      }
+    },
+
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Mods/Leli.PotatoUniverseCP/TitaniumBar",
+      "FromFile": "assets/objects/TitaniumBar.png"
+    },
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Mods/Leli.PotatoUniverseCP/TitaniumOre",
+      "FromFile": "assets/objects/TitaniumOre.png"
+    },
+    //压缩土豆
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_CompressedPotato": {
+          "Name": "CompressedPotato",
+          "Displayname": "压缩土豆",
+          "Description": "里面说不定成土豆泥了。",
+          "Type": "Basic",
+          "Category": -75,
+          "Price": 450,
+          "Edibility": 50,
+          "Texture": "Mods\\Leli.PotatoUniverseCP\\CompressedPotato"
+        }
+      }
+    },
+
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Mods/Leli.PotatoUniverseCP/CompressedPotato",
+      "FromFile": "assets/objects/CompressedPotato.png"
+    },
+    //压缩上古水果
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_CompressedAncientFruit": {
+          "Name": "CompressedAncientFruit",
+          "Displayname": "压缩上古水果",
+          "Description": "天生为了酿酒而存在。",
+          "Type": "Basic",
+          "Category": -79,
+          "Price": 3500,
+          "Texture": "Mods\\Leli.PotatoUniverseCP\\CompressedAncientFruit"
+        }
+      }
+    },
+
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Mods/Leli.PotatoUniverseCP/CompressedAncientFruit",
+      "FromFile": "assets/objects/CompressedAncientFruit.png"
+    },
+
+    //压缩电池
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_CompressedBattery": {
+          "Name": "CompressedBattery",
+          "Displayname": "压缩电池",
+          "Description": "高密度的能量！不能当做普通电池使用。",
+          "Type": "Basic",
+          "Category": -26, //工匠物品
+          "Price": 1200,
+          "Texture": "Mods\\Leli.PotatoUniverseCP\\CompressedBattery"
+        }
+      }
+    },
+
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Mods/Leli.PotatoUniverseCP/CompressedBattery",
+      "FromFile": "assets/objects/CompressedBattery.png"
+    },
+    //加入原矿
+    //锌
+    {
+      "Action": "EditData",
+      "Target": "Mods/mistyspring.ItemExtensions/Resources",
+      "Entries": {
+        "{{ModId}}_ZincNode": {
+          "Name": "{{ModId}}_ZincNode",
+          "DisplayName": "锌矿",
+          "Description": "???",
+          "Texture": "Mods\\Leli.PotatoUniverseCP\\ZincNode",
+          "SpriteIndex": 0,
+          "Width": 1,
+          "Height": 1,
+          "BreakingSound": "stoneCrack",
+          "Sound": "hammer",
+          "Tool": "Pickaxe",
+
+          "ItemDropped": "(O){{ModId}}_ZincOre",
+          "Health": 3,
+          "MinDrops": 1,
+          "MaxDrops": 4,
+
+          "MineSpawns": [
+            {
+              "Floors": "5/45",
+              "SpawnFrequency": 0.05,
+              "AdditionalChancePerLevel": 0.005,
+              "Type": "All"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Mods/Leli.PotatoUniverseCP/ZincNode",
+      "FromFile": "assets/objects/ZincNode.png"
+    },
+    //铝
+    {
+      "Action": "EditData",
+      "Target": "Mods/mistyspring.ItemExtensions/Resources",
+      "Entries": {
+        "{{ModId}}_AluminumNode": {
+          "Name": "{{ModId}}_AluminumNode",
+          "DisplayName": "铝矿",
+          "Description": "???",
+          "Texture": "Mods\\Leli.PotatoUniverseCP\\AluminumNode",
+          "SpriteIndex": 0,
+          "Width": 1,
+          "Height": 1,
+          "BreakingSound": "stoneCrack",
+          "Sound": "hammer",
+          "Tool": "Pickaxe",
+
+          "ItemDropped": "(O){{ModId}}_AluminumOre",
+          "Health": 5,
+          "MinDrops": 1,
+          "MaxDrops": 4,
+
+          "MineSpawns": [
+            {
+              "Floors": "35/85",
+              "SpawnFrequency": 0.05,
+              "AdditionalChancePerLevel": 0.005,
+              "Type": "All"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Mods/Leli.PotatoUniverseCP/AluminumNode",
+      "FromFile": "assets/objects/AluminumNode.png"
+    },
+    //钛
+    {
+      "Action": "EditData",
+      "Target": "Mods/mistyspring.ItemExtensions/Resources",
+      "Entries": {
+        "{{ModId}}_TitaniumNode": {
+          "Name": "{{ModId}}_TitaniumNode",
+          "DisplayName": "钛矿",
+          "Description": "???",
+          "Texture": "Mods\\Leli.PotatoUniverseCP\\TitaniumNode",
+          "SpriteIndex": 0,
+          "Width": 1,
+          "Height": 1,
+          "BreakingSound": "stoneCrack",
+          "Sound": "hammer",
+          "Tool": "Pickaxe",
+
+          "ItemDropped": "(O){{ModId}}_TitaniumOre",
+          "Health": 7,
+          "MinDrops": 1,
+          "MaxDrops": 4,
+
+          "MineSpawns": [
+            {
+              "Floors": "85/120", //FIXME:需要数值调整
+              "SpawnFrequency": 0.05,
+              "AdditionalChancePerLevel": 0.005,
+              "Type": "All"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Mods/Leli.PotatoUniverseCP/TitaniumNode",
+      "FromFile": "assets/objects/TitaniumNode.png"
+    },
+    //原版物品修改
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "TargetField": ["787"],
+      "Entries": {
+        "Price": 100 //降电池售价
+      }
+    },
+    {
+      //改变煤窑描述 仅中文
+      "Action": "EditData",
+      "Target": "Data/BigCraftables",
+      "TargetField": ["114"],
+      "Entries": {
+        "Description": "一次性把五十个木头烧成十个以上的木炭。"
+      }
+    },
+    {
+      //改变碎木机描述 仅中文
+      "Action": "EditData",
+      "Target": "Data/BigCraftables",
+      "TargetField": ["211"],
+      "Entries": {
+        "Description": "放入五块硬木，把它们分解成一堆普通的木头。"
+      }
+    },
+    //原版机器修改
+    //加入熔炉炼锌
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": ["(BC)13", "OutputRules"],
+      "Entries": {
+        "{{ModId}}_ZincOre": {
+          "Id": "{{ModId}}_ZincOre",
+          "Triggers": [
+            {
+              "Id": "ItemPlacedInMachine",
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "(O){{ModId}}_ZincOre",
+              "RequiredTags": null,
+              "RequiredCount": 5,
+              "Condition": null
+            }
+          ],
+          "UseFirstValidOutput": false,
+          "OutputItem": [
+            {
+              "CustomData": null,
+              "OutputMethod": null,
+              "CopyColor": false,
+              "CopyPrice": false,
+              "CopyQuality": false,
+              "PreserveType": null,
+              "PreserveId": null,
+              "IncrementMachineParentSheetIndex": 0,
+              "PriceModifiers": null,
+              "PriceModifierMode": "Stack",
+              "Condition": null,
+              "Id": "(O){{ModId}}_ZincBar",
+              "ItemId": "(O){{ModId}}_ZincBar",
+              "RandomItemId": null,
+              "MaxItems": null,
+              "MinStack": -1,
+              "MaxStack": -1,
+              "Quality": -1,
+              "ObjectInternalName": null,
+              "ObjectDisplayName": null,
+              "ObjectColor": null,
+              "ToolUpgradeLevel": -1,
+              "IsRecipe": false,
+              "StackModifiers": null,
+              "StackModifierMode": "Stack",
+              "QualityModifiers": null,
+              "QualityModifierMode": "Stack",
+              "ModData": null,
+              "PerItemCondition": null
+            }
+          ],
+          "MinutesUntilReady": 10,
+          "DaysUntilReady": -1,
+          "InvalidCountMessage": null,
+          "RecalculateOnCollect": false
+        }
+      }
+    },
+    //更改煤窑产出规则
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": ["(BC)114", "OutputRules"],
+      "Entries": {
+        "Default": {
+          "Id": "Default",
+          "Triggers": [
+            {
+              "Id": "ItemPlacedInMachine",
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "(O)388",
+              "RequiredTags": null,
+              "RequiredCount": 50,
+              "Condition": null
+            }
+          ],
+          "UseFirstValidOutput": false,
+          "OutputItem": [
+            {
+              "CustomData": null,
+              "OutputMethod": null,
+              "CopyColor": false,
+              "CopyPrice": false,
+              "CopyQuality": false,
+              "PreserveType": null,
+              "PreserveId": null,
+              "IncrementMachineParentSheetIndex": 0,
+              "PriceModifiers": null,
+              "PriceModifierMode": "Stack",
+              "Condition": null,
+              "Id": "(O)382",
+              "ItemId": "(O)382",
+              "RandomItemId": null,
+              "MaxItems": null,
+              "MinStack": 10,
+              "MaxStack": 15,
+              "Quality": -1,
+              "ObjectInternalName": null,
+              "ObjectDisplayName": null,
+              "ObjectColor": null,
+              "ToolUpgradeLevel": -1,
+              "IsRecipe": false,
+              "StackModifiers": null,
+              "StackModifierMode": "Stack",
+              "QualityModifiers": null,
+              "QualityModifierMode": "Stack",
+              "ModData": null,
+              "PerItemCondition": null
+            }
+          ],
+          "MinutesUntilReady": 10,
+          "DaysUntilReady": -1,
+          "InvalidCountMessage": null,
+          "RecalculateOnCollect": false
+        }
+      }
+    },
+    //更改晶球破开器产出速度
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": ["(BC)182", "OutputRules", "Default"],
+      "Entries": {
+        "MinutesUntilReady": -1 //不需要时间
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": ["(BC)182"], //更改晶球需求为电池
+      "Entries": {
+        "AdditionalConsumedItems": [
+          {
+            "ItemId": "(O)787", //电池
+            "RequiredCount": 1,
+            "InvalidCountMessage": "需要一块电池"
+          }
+        ]
+      }
+    },
+    //更改碎木机机制
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": ["(BC)211", "OutputRules", "Default_Hardwood_Rare"],
+      "Entries": {
+        "Triggers": [
+          {
+            "Id": "ItemPlacedInMachine",
+            "Trigger": "ItemPlacedInMachine",
+            "RequiredItemId": "(O)709",
+            "RequiredTags": null,
+            "RequiredCount": 5,
+            "Condition": "RANDOM 0.02"
+          }
+        ],
+        "OutputItem": [
+          {
+            "CustomData": null,
+            "OutputMethod": null,
+            "CopyColor": false,
+            "CopyPrice": false,
+            "CopyQuality": false,
+            "PreserveType": null,
+            "PreserveId": null,
+            "IncrementMachineParentSheetIndex": 0,
+            "PriceModifiers": null,
+            "PriceModifierMode": "Stack",
+            "Condition": null,
+            "Id": "(O)724",
+            "ItemId": "(O)724",
+            "RandomItemId": null,
+            "MaxItems": null,
+            "MinStack": 5,
+            "MaxStack": 5,
+            "Quality": -1,
+            "ObjectInternalName": null,
+            "ObjectDisplayName": null,
+            "ObjectColor": null,
+            "ToolUpgradeLevel": -1,
+            "IsRecipe": false,
+            "StackModifiers": null,
+            "StackModifierMode": "Stack",
+            "QualityModifiers": null,
+            "QualityModifierMode": "Stack",
+            "ModData": null,
+            "PerItemCondition": null
+          },
+          {
+            "CustomData": null,
+            "OutputMethod": null,
+            "CopyColor": false,
+            "CopyPrice": false,
+            "CopyQuality": false,
+            "PreserveType": null,
+            "PreserveId": null,
+            "IncrementMachineParentSheetIndex": 0,
+            "PriceModifiers": null,
+            "PriceModifierMode": "Stack",
+            "Condition": null,
+            "Id": "(O)725",
+            "ItemId": "(O)725",
+            "RandomItemId": null,
+            "MaxItems": null,
+            "MinStack": 5,
+            "MaxStack": 5,
+            "Quality": -1,
+            "ObjectInternalName": null,
+            "ObjectDisplayName": null,
+            "ObjectColor": null,
+            "ToolUpgradeLevel": -1,
+            "IsRecipe": false,
+            "StackModifiers": null,
+            "StackModifierMode": "Stack",
+            "QualityModifiers": null,
+            "QualityModifierMode": "Stack",
+            "ModData": null,
+            "PerItemCondition": null
+          },
+          {
+            "CustomData": null,
+            "OutputMethod": null,
+            "CopyColor": false,
+            "CopyPrice": false,
+            "CopyQuality": false,
+            "PreserveType": null,
+            "PreserveId": null,
+            "IncrementMachineParentSheetIndex": 0,
+            "PriceModifiers": null,
+            "PriceModifierMode": "Stack",
+            "Condition": null,
+            "Id": "(O)726",
+            "ItemId": "(O)726",
+            "RandomItemId": null,
+            "MaxItems": null,
+            "MinStack": 5,
+            "MaxStack": 5,
+            "Quality": -1,
+            "ObjectInternalName": null,
+            "ObjectDisplayName": null,
+            "ObjectColor": null,
+            "ToolUpgradeLevel": -1,
+            "IsRecipe": false,
+            "StackModifiers": null,
+            "StackModifierMode": "Stack",
+            "QualityModifiers": null,
+            "QualityModifierMode": "Stack",
+            "ModData": null,
+            "PerItemCondition": null
+          }
+        ]
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": ["(BC)211", "OutputRules", "Default_Hardwood_Common"],
+      "Entries": {
+        "Triggers": [
+          {
+            "Id": "ItemPlacedInMachine",
+            "Trigger": "ItemPlacedInMachine",
+            "RequiredItemId": "(O)709",
+            "RequiredTags": null,
+            "RequiredCount": 5,
+            "Condition": null
+          }
+        ],
+        "OutputItem": [
+          {
+            "CustomData": null,
+            "OutputMethod": null,
+            "CopyColor": false,
+            "CopyPrice": false,
+            "CopyQuality": false,
+            "PreserveType": null,
+            "PreserveId": null,
+            "IncrementMachineParentSheetIndex": 0,
+            "PriceModifiers": null,
+            "PriceModifierMode": "Stack",
+            "Condition": "RANDOM .1",
+            "Id": "Wood_ExtraOutput",
+            "ItemId": "(O)388",
+            "RandomItemId": null,
+            "MaxItems": null,
+            "MinStack": 150,
+            "MaxStack": 200,
+            "Quality": -1,
+            "ObjectInternalName": null,
+            "ObjectDisplayName": null,
+            "ObjectColor": null,
+            "ToolUpgradeLevel": -1,
+            "IsRecipe": false,
+            "StackModifiers": null,
+            "StackModifierMode": "Stack",
+            "QualityModifiers": null,
+            "QualityModifierMode": "Stack",
+            "ModData": null,
+            "PerItemCondition": null
+          },
+          {
+            "CustomData": null,
+            "OutputMethod": null,
+            "CopyColor": false,
+            "CopyPrice": false,
+            "CopyQuality": false,
+            "PreserveType": null,
+            "PreserveId": null,
+            "IncrementMachineParentSheetIndex": 0,
+            "PriceModifiers": null,
+            "PriceModifierMode": "Stack",
+            "Condition": null,
+            "Id": "Wood_Default",
+            "ItemId": "(O)388",
+            "RandomItemId": null,
+            "MaxItems": null,
+            "MinStack": 50,
+            "MaxStack": 100,
+            "Quality": -1,
+            "ObjectInternalName": null,
+            "ObjectDisplayName": null,
+            "ObjectColor": null,
+            "ToolUpgradeLevel": -1,
+            "IsRecipe": false,
+            "StackModifiers": null,
+            "StackModifierMode": "Stack",
+            "QualityModifiers": null,
+            "QualityModifierMode": "Stack",
+            "ModData": null,
+            "PerItemCondition": null
+          }
+        ],
+        "MinutesUntilReady": 10,
+        "DaysUntilReady": -1,
+        "InvalidCountMessage": null,
+        "RecalculateOnCollect": false
+      }
+    },
+    //加入电解器
+    {
+      "Action": "EditData",
+      "Target": "Data/BigCraftables",
+      "Entries": {
+        "{{ModId}}_ElectrolyticCell": {
+          "Name": "ElectrolyticCell",
+          "DisplayName": "电解器",
+          "Description": "用电池把难以处理的矿石转换为金属方块。",
+          "Price": 0,
+          "CanBePlacedOutDoors": true,
+          "CanBePlacedIndoors": true,
+          "Texture": "Mods\\Leli.PotatoUniverseCP\\ElectrolyticCell",
+          "SpriteIndex": 0
+        }
+      }
+    },
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Mods/Leli.PotatoUniverseCP/ElectrolyticCell",
+      "FromFile": "assets/bigCraftables/ElectrolyticCell.png"
+    },
+    //电解器炼铝，钛
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "Entries": {
+        "(BC){{ModId}}_ElectrolyticCell": {
+          "HasInput": false,
+          "HasOutput": false,
+          "InteractMethod": null,
+          "OutputRules": [
+            //这里加规则
+            {
+              "Id": "{{ModId}}_AluminumOre",
+              "Triggers": [
+                {
+                  "Id": "ItemPlacedInMachine",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O){{ModId}}_AluminumOre",
+                  "RequiredTags": null,
+                  "RequiredCount": 5,
+                  "Condition": null
+                }
+              ],
+              "UseFirstValidOutput": false,
+              "OutputItem": [
+                {
+                  "CustomData": null,
+                  "OutputMethod": null,
+                  "CopyColor": false,
+                  "CopyPrice": false,
+                  "CopyQuality": false,
+                  "PreserveType": null,
+                  "PreserveId": null,
+                  "IncrementMachineParentSheetIndex": 0,
+                  "PriceModifiers": null,
+                  "PriceModifierMode": "Stack",
+                  "Condition": null,
+                  "Id": "(O){{ModId}}_AluminumBar",
+                  "ItemId": "(O){{ModId}}_AluminumBar",
+                  "RandomItemId": null,
+                  "MaxItems": null,
+                  "MinStack": -1,
+                  "MaxStack": -1,
+                  "Quality": -1,
+                  "ObjectInternalName": null,
+                  "ObjectDisplayName": null,
+                  "ObjectColor": null,
+                  "ToolUpgradeLevel": -1,
+                  "IsRecipe": false,
+                  "StackModifiers": null,
+                  "StackModifierMode": "Stack",
+                  "QualityModifiers": null,
+                  "QualityModifierMode": "Stack",
+                  "ModData": null,
+                  "PerItemCondition": null
+                }
+              ],
+              "MinutesUntilReady": 10,
+              "RecalculateOnCollect": false
+            },
+            {
+              "Id": "{{ModId}}_TitaniumOre",
+              "Triggers": [
+                {
+                  "Id": "ItemPlacedInMachine",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O){{ModId}}_TitaniumOre",
+                  "RequiredTags": null,
+                  "RequiredCount": 5,
+                  "Condition": null
+                }
+              ],
+              "UseFirstValidOutput": false,
+              "OutputItem": [
+                {
+                  "CustomData": null,
+                  "OutputMethod": null,
+                  "CopyColor": false,
+                  "CopyPrice": false,
+                  "CopyQuality": false,
+                  "PreserveType": null,
+                  "PreserveId": null,
+                  "IncrementMachineParentSheetIndex": 0,
+                  "PriceModifiers": null,
+                  "PriceModifierMode": "Stack",
+                  "Condition": null,
+                  "Id": "(O){{ModId}}_TitaniumBar",
+                  "ItemId": "(O){{ModId}}_TitaniumBar",
+                  "RandomItemId": null,
+                  "MaxItems": null,
+                  "MinStack": -1,
+                  "MaxStack": -1,
+                  "Quality": -1,
+                  "ObjectInternalName": null,
+                  "ObjectDisplayName": null,
+                  "ObjectColor": null,
+                  "ToolUpgradeLevel": -1,
+                  "IsRecipe": false,
+                  "StackModifiers": null,
+                  "StackModifierMode": "Stack",
+                  "QualityModifiers": null,
+                  "QualityModifierMode": "Stack",
+                  "ModData": null,
+                  "PerItemCondition": null
+                }
+              ],
+              "MinutesUntilReady": 10,
+              "RecalculateOnCollect": false
+            }
+          ],
+          "AdditionalConsumedItems": [
+            {
+              "ItemId": "(O)787", //电池
+              "RequiredCount": 1,
+              "InvalidCountMessage": "需要一块电池"
+            }
+          ],
+
+          "LoadEffects": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "Sounds": [
+                {
+                  "Id": "furnace",
+                  "Delay": 0
+                }
+              ]
+            }
+          ],
+          "WorkingEffects": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "Sounds": [
+                {
+                  "Id": "fireball",
+                  "Delay": 0
+                }
+              ],
+              "Interval": 100,
+              "Frames": null,
+              "ShakeDuration": -1,
+              "TemporarySprites": [
+                {
+                  "Id": "Default",
+                  "Condition": null,
+                  "Texture": "TileSheets\\animations",
+                  "SourceRect": {
+                    "X": 0,
+                    "Y": 1920,
+                    "Width": 64,
+                    "Height": 64
+                  },
+                  "Interval": 50.0,
+                  "Frames": 4,
+                  "Loops": 10,
+                  "PositionOffset": "0, -4",
+                  "Flicker": false,
+                  "Flip": false,
+                  "SortOffset": 0.0,
+                  "AlphaFade": 0.005,
+                  "Scale": 0.25,
+                  "ScaleChange": 0.0,
+                  "Rotation": 0.0,
+                  "RotationChange": 0.0,
+                  "Color": "Ivory"
+                }
+              ]
+            }
+          ],
+          "WorkingEffectChance": 0.165,
+          "AllowLoadWhenFull": false,
+          "WobbleWhileWorking": true,
+          "LightWhileWorking": {
+            "Radius": 1.5,
+            "Color": "MidnightBlue"
+          },
+          "ShowNextIndexWhileWorking": true,
+          "ShowNextIndexWhenReady": false,
+          "AllowFairyDust": true,
+          "IsIncubator": false,
+          "OnlyCompleteOvernight": false,
+          "ClearContentsOvernightCondition": null,
+          "StatsToIncrementWhenLoaded": null,
+          "StatsToIncrementWhenHarvested": null,
+          "ExperienceGainOnHarvest": null,
+          "CustomFields": null
+        }
+      }
+    },
+    //加入压缩机
+    {
+      "Action": "EditData",
+      "Target": "Data/BigCraftables",
+      "Entries": {
+        "{{ModId}}_Compresser": {
+          "Name": "Compresser",
+          "DisplayName": "压缩机",
+          "Description": "把一些东西压在一起，需要一个电池。",
+          "Price": 0,
+          "CanBePlacedOutDoors": true,
+          "CanBePlacedIndoors": true,
+          "Texture": "Mods\\Leli.PotatoUniverseCP\\Compresser",
+          "SpriteIndex": 0
+        }
+      }
+    },
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Mods/Leli.PotatoUniverseCP/Compresser",
+      "FromFile": "assets/bigCraftables/Compresser.png"
+    },
+    //压缩机配方
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "Entries": {
+        "(BC){{ModId}}_Compresser": {
+          "HasInput": false,
+          "HasOutput": false,
+          "InteractMethod": null,
+          "OutputRules": [
+            //这里加规则
+            {
+              "Id": "{{ModId}}_CompressPotato",
+              "Triggers": [
+                {
+                  "Id": "ItemPlacedInMachine",
+                  "Trigger": "ItemPlacedInMachine", //压缩土豆
+                  "RequiredItemId": "(O)192",
+                  "RequiredTags": null,
+                  "RequiredCount": 5,
+                  "Condition": null
+                }
+              ],
+              "UseFirstValidOutput": false,
+              "OutputItem": [
+                {
+                  "CustomData": null,
+                  "OutputMethod": null,
+                  "CopyColor": false,
+                  "CopyPrice": false,
+                  "CopyQuality": false,
+                  "PreserveType": null,
+                  "PreserveId": null,
+                  "IncrementMachineParentSheetIndex": 0,
+                  "PriceModifiers": null,
+                  "PriceModifierMode": "Stack",
+                  "Condition": null,
+                  "Id": "(O){{ModId}}_CompressedPotato",
+                  "ItemId": "(O){{ModId}}_CompressedPotato",
+                  "RandomItemId": null,
+                  "MaxItems": null,
+                  "MinStack": -1,
+                  "MaxStack": -1,
+                  "Quality": -1,
+                  "ObjectInternalName": null,
+                  "ObjectDisplayName": null,
+                  "ObjectColor": null,
+                  "ToolUpgradeLevel": -1,
+                  "IsRecipe": false,
+                  "StackModifiers": null,
+                  "StackModifierMode": "Stack",
+                  "QualityModifiers": null,
+                  "QualityModifierMode": "Stack",
+                  "ModData": null,
+                  "PerItemCondition": null
+                }
+              ],
+              "MinutesUntilReady": 10,
+              "RecalculateOnCollect": false
+            },
+            {
+              "Id": "{{ModId}}_CompressedAncientFruit",
+              "Triggers": [
+                {
+                  "Id": "ItemPlacedInMachine",
+                  "Trigger": "ItemPlacedInMachine", //压缩上古果实
+                  "RequiredItemId": "(O)454",
+                  "RequiredTags": null,
+                  "RequiredCount": 5,
+                  "Condition": null
+                }
+              ],
+              "UseFirstValidOutput": false,
+              "OutputItem": [
+                {
+                  "CustomData": null,
+                  "OutputMethod": null,
+                  "CopyColor": false,
+                  "CopyPrice": false,
+                  "CopyQuality": false,
+                  "PreserveType": null,
+                  "PreserveId": null,
+                  "IncrementMachineParentSheetIndex": 0,
+                  "PriceModifiers": null,
+                  "PriceModifierMode": "Stack",
+                  "Condition": null,
+                  "Id": "(O){{ModId}}_CompressedAncientFruit",
+                  "ItemId": "(O){{ModId}}_CompressedAncientFruit",
+                  "RandomItemId": null,
+                  "MaxItems": null,
+                  "MinStack": -1,
+                  "MaxStack": -1,
+                  "Quality": -1,
+                  "ObjectInternalName": null,
+                  "ObjectDisplayName": null,
+                  "ObjectColor": null,
+                  "ToolUpgradeLevel": -1,
+                  "IsRecipe": false,
+                  "StackModifiers": null,
+                  "StackModifierMode": "Stack",
+                  "QualityModifiers": null,
+                  "QualityModifierMode": "Stack",
+                  "ModData": null,
+                  "PerItemCondition": null
+                }
+              ],
+              "MinutesUntilReady": 10,
+              "RecalculateOnCollect": false
+            },
+            {
+              "Id": "{{ModId}}_CompressBattery",
+              "Triggers": [
+                {
+                  "Id": "ItemPlacedInMachine",
+                  "Trigger": "ItemPlacedInMachine", //压缩电池
+                  "RequiredItemId": "(O)787",
+                  "RequiredTags": null,
+                  "RequiredCount": 9,
+                  "Condition": null
+                }
+              ],
+              "UseFirstValidOutput": false,
+              "OutputItem": [
+                {
+                  "CustomData": null,
+                  "OutputMethod": null,
+                  "CopyColor": false,
+                  "CopyPrice": false,
+                  "CopyQuality": false,
+                  "PreserveType": null,
+                  "PreserveId": null,
+                  "IncrementMachineParentSheetIndex": 0,
+                  "PriceModifiers": null,
+                  "PriceModifierMode": "Stack",
+                  "Condition": null,
+                  "Id": "(O){{ModId}}_CompressedBattery",
+                  "ItemId": "(O){{ModId}}_CompressedBattery",
+                  "RandomItemId": null,
+                  "MaxItems": null,
+                  "MinStack": -1,
+                  "MaxStack": -1,
+                  "Quality": -1,
+                  "ObjectInternalName": null,
+                  "ObjectDisplayName": null,
+                  "ObjectColor": null,
+                  "ToolUpgradeLevel": -1,
+                  "IsRecipe": false,
+                  "StackModifiers": null,
+                  "StackModifierMode": "Stack",
+                  "QualityModifiers": null,
+                  "QualityModifierMode": "Stack",
+                  "ModData": null,
+                  "PerItemCondition": null
+                }
+              ],
+              "MinutesUntilReady": 10,
+              "RecalculateOnCollect": false
+            },
+            {
+              "Id": "{{ModId}}_GoldToIridium",
+              "Triggers": [
+                {
+                  "Id": "ItemPlacedInMachine",
+                  "Trigger": "ItemPlacedInMachine", //核聚变产铱
+                  "RequiredItemId": "(O)336", //金锭
+                  "RequiredTags": null,
+                  "RequiredCount": 5,
+                  "Condition": null
+                }
+              ],
+              "UseFirstValidOutput": false,
+              "OutputItem": [
+                {
+                  "CustomData": null,
+                  "OutputMethod": null,
+                  "CopyColor": false,
+                  "CopyPrice": false,
+                  "CopyQuality": false,
+                  "PreserveType": null,
+                  "PreserveId": null,
+                  "IncrementMachineParentSheetIndex": 0,
+                  "PriceModifiers": null,
+                  "PriceModifierMode": "Stack",
+                  "Condition": null,
+                  "Id": "(O)337", //铱锭
+                  "ItemId": "(O)337",
+                  "RandomItemId": null,
+                  "MaxItems": null,
+                  "MinStack": -1,
+                  "MaxStack": -1,
+                  "Quality": -1,
+                  "ObjectInternalName": null,
+                  "ObjectDisplayName": null,
+                  "ObjectColor": null,
+                  "ToolUpgradeLevel": -1,
+                  "IsRecipe": false,
+                  "StackModifiers": null,
+                  "StackModifierMode": "Stack",
+                  "QualityModifiers": null,
+                  "QualityModifierMode": "Stack",
+                  "ModData": null,
+                  "PerItemCondition": null
+                }
+              ],
+              "MinutesUntilReady": 10,
+              "RecalculateOnCollect": false
+            }
+          ],
+          "AdditionalConsumedItems": [
+            {
+              "ItemId": "(O)787", //电池
+              "RequiredCount": 1,
+              "InvalidCountMessage": "需要一块电池"
+            }
+          ],
+          "LoadEffects": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "Sounds": [
+                {
+                  "Id": "Ship",
+                  "Delay": 0
+                }
+              ]
+            }
+          ],
+          "WorkingEffects": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "Sounds": [
+                {
+                  "Id": "hammer",
+                  "Delay": 400
+                }
+              ],
+              "Interval": 100,
+              "Frames": null,
+              "ShakeDuration": -1
+            }
+          ],
+          "WorkingEffectChance": 0.5,
+          "AllowLoadWhenFull": false,
+          "WobbleWhileWorking": true,
+
+          "ShowNextIndexWhileWorking": true,
+          "ShowNextIndexWhenReady": false,
+          "AllowFairyDust": true,
+          "IsIncubator": false,
+          "OnlyCompleteOvernight": false,
+          "ClearContentsOvernightCondition": null,
+          "StatsToIncrementWhenLoaded": null,
+          "StatsToIncrementWhenHarvested": null,
+          "ExperienceGainOnHarvest": null,
+          "CustomFields": null
+        }
+      }
+    },
+    //加入土豆发电机
+    {
+      "Action": "EditData",
+      "Target": "Data/BigCraftables",
+      "Entries": {
+        "{{ModId}}_PotatoGenerator": {
+          "Name": "PotatoGenerator",
+          "DisplayName": "土豆发电机",
+          "Description": "用自然的力量生产电池。",
+          "Price": 0,
+          "CanBePlacedOutDoors": true,
+          "CanBePlacedIndoors": true,
+          "Texture": "Mods\\Leli.PotatoUniverseCP\\PotatoGenerator",
+          "SpriteIndex": 0
+        }
+      }
+    },
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Mods/Leli.PotatoUniverseCP/PotatoGenerator",
+      "FromFile": "assets/bigCraftables/PotatoGenerator.png"
+    },
+    //加入发电机规则
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "Entries": {
+        "(BC){{ModId}}_PotatoGenerator": {
+          "HasInput": false,
+          "HasOutput": false,
+          "InteractMethod": null,
+          "OutputRules": [
+            //这里加规则
+            {
+              "Id": "{{ModId}}_Potato",
+              "Triggers": [
+                {
+                  "Id": "ItemPlacedInMachine",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)192", //土豆
+                  "RequiredTags": null,
+                  "RequiredCount": 1,
+                  "Condition": null
+                }
+              ],
+              "UseFirstValidOutput": false,
+              "OutputItem": [
+                {
+                  "CustomData": null,
+                  "OutputMethod": null,
+                  "CopyColor": false,
+                  "CopyPrice": false,
+                  "CopyQuality": false,
+                  "PreserveType": null,
+                  "PreserveId": null,
+                  "IncrementMachineParentSheetIndex": 0,
+                  "PriceModifiers": null,
+                  "PriceModifierMode": "Stack",
+                  "Condition": null,
+                  "Id": "(O)787",
+                  "ItemId": "(O)787",
+                  "RandomItemId": null,
+                  "MaxItems": null,
+                  "MinStack": -1,
+                  "MaxStack": -1,
+                  "Quality": -1,
+                  "ObjectInternalName": null,
+                  "ObjectDisplayName": null,
+                  "ObjectColor": null,
+                  "ToolUpgradeLevel": -1,
+                  "IsRecipe": false,
+                  "StackModifiers": null,
+                  "StackModifierMode": "Stack",
+                  "QualityModifiers": null,
+                  "QualityModifierMode": "Stack",
+                  "ModData": null,
+                  "PerItemCondition": null
+                }
+              ],
+              "MinutesUntilReady": 10,
+              "RecalculateOnCollect": false
+            },
+            {
+              "Id": "{{ModId}}_AncientFruit",
+              "Triggers": [
+                {
+                  "Id": "ItemPlacedInMachine",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)454", //上古果实
+                  "RequiredTags": null,
+                  "RequiredCount": 1,
+                  "Condition": null
+                }
+              ],
+              "UseFirstValidOutput": false,
+              "OutputItem": [
+                {
+                  "CustomData": null,
+                  "OutputMethod": null,
+                  "CopyColor": false,
+                  "CopyPrice": false,
+                  "CopyQuality": false,
+                  "PreserveType": null,
+                  "PreserveId": null,
+                  "IncrementMachineParentSheetIndex": 0,
+                  "PriceModifiers": null,
+                  "PriceModifierMode": "Stack",
+                  "Condition": null,
+                  "Id": "(O)787",
+                  "ItemId": "(O)787",
+                  "RandomItemId": null,
+                  "MaxItems": null,
+                  "MinStack": 5,
+                  "MaxStack": 5,
+                  "Quality": -1,
+                  "ObjectInternalName": null,
+                  "ObjectDisplayName": null,
+                  "ObjectColor": null,
+                  "ToolUpgradeLevel": -1,
+                  "IsRecipe": false,
+                  "StackModifiers": null,
+                  "StackModifierMode": "Stack",
+                  "QualityModifiers": null,
+                  "QualityModifierMode": "Stack",
+                  "ModData": null,
+                  "PerItemCondition": null
+                }
+              ],
+              "MinutesUntilReady": 10,
+              "RecalculateOnCollect": false
+            },
+            {
+              "Id": "{{ModId}}_CompressedPotato",
+              "Triggers": [
+                {
+                  "Id": "ItemPlacedInMachine",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O){{ModId}}_CompressedPotato", //压缩土豆
+                  "RequiredTags": null,
+                  "RequiredCount": 1,
+                  "Condition": null
+                }
+              ],
+              "UseFirstValidOutput": false,
+              "OutputItem": [
+                {
+                  "CustomData": null,
+                  "OutputMethod": null,
+                  "CopyColor": false,
+                  "CopyPrice": false,
+                  "CopyQuality": false,
+                  "PreserveType": null,
+                  "PreserveId": null,
+                  "IncrementMachineParentSheetIndex": 0,
+                  "PriceModifiers": null,
+                  "PriceModifierMode": "Stack",
+                  "Condition": null,
+                  "Id": "(O)787",
+                  "ItemId": "(O)787",
+                  "RandomItemId": null,
+                  "MaxItems": null,
+                  "MinStack": 5,
+                  "MaxStack": 5,
+                  "Quality": -1,
+                  "ObjectInternalName": null,
+                  "ObjectDisplayName": null,
+                  "ObjectColor": null,
+                  "ToolUpgradeLevel": -1,
+                  "IsRecipe": false,
+                  "StackModifiers": null,
+                  "StackModifierMode": "Stack",
+                  "QualityModifiers": null,
+                  "QualityModifierMode": "Stack",
+                  "ModData": null,
+                  "PerItemCondition": null
+                }
+              ],
+              "MinutesUntilReady": 10,
+              "RecalculateOnCollect": false
+            },
+            {
+              "Id": "{{ModId}}_CompressedAncientFruit",
+              "Triggers": [
+                {
+                  "Id": "ItemPlacedInMachine",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O){{ModId}}_CompressedAncientFruit", //压缩上古果实
+                  "RequiredTags": null,
+                  "RequiredCount": 1,
+                  "Condition": null
+                }
+              ],
+              "UseFirstValidOutput": false,
+              "OutputItem": [
+                {
+                  "CustomData": null,
+                  "OutputMethod": null,
+                  "CopyColor": false,
+                  "CopyPrice": false,
+                  "CopyQuality": false,
+                  "PreserveType": null,
+                  "PreserveId": null,
+                  "IncrementMachineParentSheetIndex": 0,
+                  "PriceModifiers": null,
+                  "PriceModifierMode": "Stack",
+                  "Condition": null,
+                  "Id": "(O)787",
+                  "ItemId": "(O)787",
+                  "RandomItemId": null,
+                  "MaxItems": null,
+                  "MinStack": 25,
+                  "MaxStack": 25,
+                  "Quality": -1,
+                  "ObjectInternalName": null,
+                  "ObjectDisplayName": null,
+                  "ObjectColor": null,
+                  "ToolUpgradeLevel": -1,
+                  "IsRecipe": false,
+                  "StackModifiers": null,
+                  "StackModifierMode": "Stack",
+                  "QualityModifiers": null,
+                  "QualityModifierMode": "Stack",
+                  "ModData": null,
+                  "PerItemCondition": null
+                }
+              ],
+              "MinutesUntilReady": 10,
+              "RecalculateOnCollect": false
+            }
+          ],
+
+          "LoadEffects": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "Sounds": [
+                {
+                  "Id": "Ship",
+                  "Delay": 0
+                },
+                {
+                  "Id": "dirtyHit",
+                  "Delay": 250
+                }
+              ],
+              "Interval": 100,
+              "Frames": null,
+              "ShakeDuration": -1,
+              "TemporarySprites": null
+            }
+          ],
+          "WorkingEffectChance": 0.165,
+          "AllowLoadWhenFull": false,
+          "WobbleWhileWorking": true,
+
+          "ShowNextIndexWhileWorking": false,
+          "ShowNextIndexWhenReady": true,
+          "AllowFairyDust": true,
+          "IsIncubator": false,
+          "OnlyCompleteOvernight": false,
+          "ClearContentsOvernightCondition": null,
+          "StatsToIncrementWhenLoaded": null,
+          "StatsToIncrementWhenHarvested": null,
+          "ExperienceGainOnHarvest": null,
+          "CustomFields": null
+        }
+      }
+    },
+    //加入土豆复制器 Potatoarium
+    {
+      "Action": "EditData",
+      "Target": "Data/BigCraftables",
+      "Entries": {
+        "{{ModId}}_Potatoarium": {
+          "Name": "Potatoarium",
+          "DisplayName": "土豆复制机",
+          "Description": "只是科学的无土栽培而已。",
+          "Price": 0,
+          "CanBePlacedOutDoors": true,
+          "CanBePlacedIndoors": true,
+          "Texture": "Mods\\Leli.PotatoUniverseCP\\Potatoarium",
+          "SpriteIndex": 0
+        }
+      }
+    },
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Mods/Leli.PotatoUniverseCP/Potatoarium",
+      "FromFile": "assets/bigCraftables/Potatoarium.png"
+    },
+    //土豆复制机逻辑
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+
+      "Entries": {
+        "(BC){{ModId}}_Potatoarium": {
+          "HasInput": false,
+          "HasOutput": false,
+          "InteractMethod": null,
+          "OutputRules": [
+            {
+              "Id": "Potato",
+              "Triggers": [
+                {
+                  "Id": "OutputCollected",
+                  "Trigger": "OutputCollected",
+                  "RequiredItemId": null,
+                  "RequiredTags": null,
+                  "RequiredCount": 1,
+                  "Condition": null
+                },
+                {
+                  "Id": "ItemPlacedInMachine",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)192", //土豆
+                  "RequiredTags": null,
+                  "RequiredCount": 1,
+                  "Condition": null
+                }
+              ],
+              "OutputItem": [
+                {
+                  "CustomData": null,
+                  "OutputMethod": null,
+                  "CopyColor": false,
+                  "CopyPrice": false,
+                  "CopyQuality": false,
+                  "PreserveType": null,
+                  "PreserveId": null,
+                  "IncrementMachineParentSheetIndex": 0,
+                  "PriceModifiers": null,
+                  "PriceModifierMode": "Stack",
+                  "Condition": null,
+                  "Id": "Default",
+                  "ItemId": "DROP_IN",
+                  "RandomItemId": null,
+                  "MaxItems": null,
+                  "MinStack": -1,
+                  "MaxStack": -1,
+                  "Quality": 0,
+                  "ObjectInternalName": null,
+                  "ObjectDisplayName": null,
+                  "ObjectColor": null,
+                  "ToolUpgradeLevel": -1,
+                  "IsRecipe": false,
+                  "StackModifiers": null,
+                  "StackModifierMode": "Stack",
+                  "QualityModifiers": null,
+                  "QualityModifierMode": "Stack",
+                  "ModData": null,
+                  "PerItemCondition": null
+                }
+              ],
+              "MinutesUntilReady": 10, //TODO:都要平衡
+              "InvalidCountMessage": null,
+              "RecalculateOnCollect": false
+            },
+            {
+              "Id": "AncientFruit",
+              "Triggers": [
+                {
+                  "Id": "OutputCollected",
+                  "Trigger": "OutputCollected",
+                  "RequiredItemId": null,
+                  "RequiredTags": null,
+                  "RequiredCount": 1,
+                  "Condition": null
+                },
+                {
+                  "Id": "ItemPlacedInMachine",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)454", //上古水果
+                  "RequiredTags": null,
+                  "RequiredCount": 1,
+                  "Condition": null
+                }
+              ],
+              "OutputItem": [
+                {
+                  "CustomData": null,
+                  "OutputMethod": null,
+                  "CopyColor": false,
+                  "CopyPrice": false,
+                  "CopyQuality": false,
+                  "PreserveType": null,
+                  "PreserveId": null,
+                  "IncrementMachineParentSheetIndex": 0,
+                  "PriceModifiers": null,
+                  "PriceModifierMode": "Stack",
+                  "Condition": null,
+                  "Id": "Default",
+                  "ItemId": "DROP_IN",
+                  "RandomItemId": null,
+                  "MaxItems": null,
+                  "MinStack": -1,
+                  "MaxStack": -1,
+                  "Quality": 0,
+                  "ObjectInternalName": null,
+                  "ObjectDisplayName": null,
+                  "ObjectColor": null,
+                  "ToolUpgradeLevel": -1,
+                  "IsRecipe": false,
+                  "StackModifiers": null,
+                  "StackModifierMode": "Stack",
+                  "QualityModifiers": null,
+                  "QualityModifierMode": "Stack",
+                  "ModData": null,
+                  "PerItemCondition": null
+                }
+              ],
+              "MinutesUntilReady": 10,
+              "InvalidCountMessage": null,
+              "RecalculateOnCollect": false
+            }
+          ],
+          "ReadyTimeModifierMode": "Stack",
+          "InvalidItemMessage": null,
+          "InvalidItemMessageCondition": null,
+          "InvalidCountMessage": null,
+          "LoadEffects": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "Sounds": [
+                {
+                  "Id": "select",
+                  "Delay": 0
+                }
+              ],
+              "Interval": 100,
+              "Frames": null,
+              "ShakeDuration": -1,
+              "TemporarySprites": null
+            }
+          ],
+          "WorkingEffects": null,
+          "WorkingEffectChance": 0.33,
+          "AllowLoadWhenFull": false,
+          "WobbleWhileWorking": true,
+          "LightWhileWorking": {
+            "Radius": 1.5,
+            "Color": "DarkRed"
+          },
+          "ShowNextIndexWhileWorking": false,
+          "ShowNextIndexWhenReady": false,
+          "AllowFairyDust": true,
+          "IsIncubator": false,
+          "OnlyCompleteOvernight": false,
+          "ClearContentsOvernightCondition": null,
+          "StatsToIncrementWhenLoaded": null,
+          "StatsToIncrementWhenHarvested": null,
+          "ExperienceGainOnHarvest": null,
+          "CustomFields": null
+        }
+      }
+    },
+    //加入锌电剑 ZincSword
+    {
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "{{ModId}}_ZincSword": {
+          "Name": "ZincSword",
+          "Displayname": "锌电剑",
+          "Description": "这把剑就是个大电池。",
+          "MinDamage": 10,
+          "MaxDamage": 20,
+          "Knockback": 1.0,
+          "Speed": -2,
+          "Precision": 0,
+          "Defense": 0,
+          "Type": 3,
+          "MineBaseLevel": -1,
+          "MineMinLevel": -1,
+          "AreaOfEffect": 0,
+          "CritChance": 0.02,
+          "CritMultiplier": 3.0,
+          "CanBeLostOnDeath": true,
+          "Texture": "Mods\\Leli.PotatoUniverseCP\\ZincSword",
+          "SpriteIndex": 0,
+          "Projectiles": [
+            {
+              "Id": "Spark1",
+              "Damage": 5,
+              "MaxDistance": 5,
+              "Velocity": 15,
+              "TailLength": 8,
+              "MinAngleOffset": -10,
+              "MaxAngleOffset": 10,
+              "SpriteIndex": 20
+            },
+            {
+              "Id": "Spark2",
+              "Damage": 5,
+              "MaxDistance": 3,
+              "Velocity": 5,
+              "TailLength": 8,
+              "MinAngleOffset": -30,
+              "MaxAngleOffset": 30,
+              "SpriteIndex": 20
+            },
+            {
+              "Id": "Spark3",
+              "Damage": 5,
+              "MaxDistance": 3,
+              "Velocity": 7,
+              "TailLength": 8,
+              "MinAngleOffset": -30,
+              "MaxAngleOffset": 30,
+              "SpriteIndex": 20
+            }
+          ],
+          "CustomFields": null
+        }
+      }
+    },
+
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Mods/Leli.PotatoUniverseCP/ZincSword",
+      "FromFile": "assets/others/ZincSword.png"
+    },
+    //载入修改的特效材质 TODO:也许不是一个好方法,考虑使用Item字段
+    {
+      "Action": "EditImage",
+      "Target": "TileSheets/Projectiles",
+      "FromFile": "assets/others/AdditionProjectiles.png"
+    },
+    //加入配方
+    {
+      "Action": "EditData",
+      "Target": "Data/CraftingRecipes",
+      "Entries": {
+        "{{ModId}}_PotatoGenerator": "388 25 334 5 {{ModId}}_ZincBar 5/Home/{{ModId}}_PotatoGenerator/true/null",
+        "{{ModId}}_ElectrolyticCell": "390 50 {{ModId}}_ZincBar 5/Home/{{ModId}}_ElectrolyticCell/true/null",
+        "{{ModId}}_Potatoarium": "{{ModId}}_AluminumBar 10 336 5 787 5 768 1/Home/{{ModId}}_Potatoarium/true/null",
+        "{{ModId}}_Compresser": "{{ModId}}_AluminumBar 10 335 5/Home/{{ModId}}_Compresser/true/s Mining 6",
+
+        "{{ModId}}_ZincSword": "{{ModId}}_ZincBar 10 334 5 787 5/Home/{{ModId}}_ZincSword/false/s Combat 3",
+        //更改原版配方
+        "Solar Panel": "338 5 {{ModId}}_AluminumBar 5 335 5/Home/231/true/s Mining 6", //原版解锁是信件 这里强行改变了解锁方式
+        "Geode Crusher": "{{ModId}}_AluminumBar 5 336 5 72 1/Home/182/true/s Mining 7",
+        
+        "Charcoal Kiln": "388 50 334 2 {{ModId}}_ZincBar 5/Home/114/true/s Foraging 2/",
+        //使原版不可合成物品可合成
+        "{{ModId}}_DwarfGadget": "{{ModId}}_AluminumBar 5 338 10 337 5 {{ModId}}_CompressedBattery 1/Home/122/false/null/",
+        "{{ModId}}_WoodChipper": "{{ModId}}_ZincBar 5 390 50 787 2/Home/122/false/s Foraging 6/"
+      }
+    },
+    //加入信件 
+    {
+      "Action": "EditData",
+      "Target": "Data/mail",
+      "Entries": {
+        "{{ModId}}_PotatoHint": "尊敬的农夫@：^我听说你最近才搬来这里，也许会对该种些什么有些疑惑！春天为什么不种一些土豆呢？皮埃尔的土豆种子质量永远是最好的，欢迎光临！^——皮埃尔[#]来自皮埃尔的土豆推荐",
+        "{{ModId}}_ElectrolyticCellRecipe": "你好，@^我听说你挖掘到一种没法熔炼的矿石。你可能需要这个更加强力的机器…… ^别丢了你的老炉子，那个依然有用！^^——铁匠克林特%item craftingRecipe {{ModId}}_ElectrolyticCell %%[#]来自克林特的电解器图纸",
+        "{{ModId}}_PotatoariumRecipe": "亲爱的农夫@：^也许季节变换会对你的电力供应产生一些问题。我在对你的山洞实际考察后，研究出了一种培育土豆的机器，也许你会需要这份图纸。 ^——德米特里厄斯 %item craftingRecipe {{ModId}}_Potatoarium %%[#]来自德米特里厄斯的土豆复制机图纸",
+        "{{ModId}}_CompresserHint": "亲爱的@：^我发现你最近做出了压缩机，这个机器有些很特别的功能。我将我收集的资料列在下面，希望对你有些帮助。^- 5个土豆压成1个压缩土豆^- 9个电池压成1个压缩电池 ^- 5个黄金压成1个铱锭 ^——德米特里厄斯[#]来自德米特里厄斯的压缩机建议",
+        "{{ModId}}_AncientFruitHint": "@:^最近我发现你的农场里种植了消失了很多年的上古水果。上古水果和土豆有很多功能上的相似之处，善用这种水果。 ^——莱纳斯[#]来自莱纳斯的上古水果提示",
+        "{{ModId}}_ComputerRecipe": "@：^我 是石广 井里白勺那个，人类 的话 女子又住。^^（下面是矮人语）^嘿，我翻到一张用不着的图纸，你拿去吧。^——矮人%item craftingRecipe {{ModId}}_DwarfGadget %%[#]来自矮人的电脑配方"
+      }
+    },
+    //加入农场事件
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/farm",
+      "Entries": {
+        //德米解锁土豆发电机 
+        "99999999/t 600 1130/j 6": "continue/64 15/farmer 64 16 2 Demetrius 64 18 0/skippable/pause 1500/speak Demetrius \"嗨，@!#$b# 刚来这边生活很辛苦吧。\"/pause 500/speak Demetrius  \"这里的农场荒废太久了，电力可能不太完善。#$b#罗宾告诉我说你可能会需要这个，收下吧。\"/pause 800/itemAboveHead/playSound getNewSpecialItem/addCraftingRecipe {{ModId}}_PotatoGenerator /pause 3300/message \"学会如何制造'土豆发电机'。\"/pause 800/speak Demetrius \"这是我先前和玛鲁做出来的机器，可以用土豆生产一些电力。#$b# 我还以为这个发明永远派不上用场了呢。$h#$b#希望这对你有些帮助。我回去了。\"/pause 200/end"
+      }
+    },
+    //加入触发器 发送信件
+    {
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}_ElectrolyticCellRecipeTrigger": {
+          "Id": "{{ModId}}_ElectrolyticCellRecipeTrigger",
+          "Trigger": "DayEnding",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_AluminumOre 1 999",
+          "SkipPermanentlyCondition": null,
+          "HostOnly": false,
+          "Action": "AddMail Current {{ModId}}_ElectrolyticCellRecipe",
+          "Actions": null,
+          "CustomFields": null,
+          "MarkActionApplied": true
+        },
+        "{{ModId}}_PotatoariumRecipeTrigger": {
+          "Id": "{{ModId}}_PotatoariumRecipeTrigger",
+          "Trigger": "DayEnding",
+          "Condition": "SEASON_DAY summer 28",
+          "SkipPermanentlyCondition": null,
+          "HostOnly": false,
+          "Action": "AddMail Current {{ModId}}_PotatoariumRecipe",
+          "Actions": null,
+          "CustomFields": null,
+          "MarkActionApplied": true
+        },
+        "{{ModId}}_PotatoHintTrigger": {
+          "Id": "{{ModId}}_PotatoHintTrigger",
+          "Trigger": "DayEnding",
+          "Condition": "SEASON_DAY spring 3",
+          "SkipPermanentlyCondition": null,
+          "HostOnly": false,
+          "Action": "AddMail Current {{ModId}}_PotatoHint",
+          "Actions": null,
+          "CustomFields": null,
+          "MarkActionApplied": true
+        },
+        "{{ModId}}_AncientFruitHintTrigger": {
+          "Id": "{{ModId}}_AncientFruitHintTrigger",
+          "Trigger": "DayEnding",
+          "Condition": "PLAYER_HAS_ITEM Current (O)454 1 999",
+          "SkipPermanentlyCondition": null,
+          "HostOnly": false,
+          "Action": "AddMail Current {{ModId}}_AncientFruitHint",
+          "Actions": null,
+          "CustomFields": null,
+          "MarkActionApplied": true
+        },
+        "{{ModId}}_CompresserHintTrigger": {
+          "Id": "{{ModId}}_CompresserHintTrigger",
+          "Trigger": "DayEnding",
+          "Condition": "PLAYER_HAS_ITEM Current (BC){{ModId}}_Compresser 1 999",
+          "SkipPermanentlyCondition": null,
+          "HostOnly": false,
+          "Action": "AddMail Current {{ModId}}_CompresserHint",
+          "Actions": null,
+          "CustomFields": null,
+          "MarkActionApplied": true
+        },
+        "{{ModId}}_ComputerRecipeTrigger": {
+          "Id": "{{ModId}}_ComputerRecipeTrigger",
+          "Trigger": "DayEnding",
+          "Condition": "PLAYER_FRIENDSHIP_POINTS Current Dwarf 1500",
+          "SkipPermanentlyCondition": null,
+          "HostOnly": false,
+          "Action": "AddMail Current {{ModId}}_ComputerRecipe",
+          "Actions": null,
+          "CustomFields": null,
+          "MarkActionApplied": true
+        }
+      }
+    }
+  ]
+}
+//debug showmail Leli.PotatoUniverseCP_ComputerRecipe
+//debug ebi 99999998
+//patch reload Leli.PotatoUniverseCP
